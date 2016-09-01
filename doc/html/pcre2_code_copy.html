@@ -1,9 +1,9 @@
 <html>
 <head>
-<title>pcre2_set_max_pattern_length specification</title>
+<title>pcre2_code_copy specification</title>
 </head>
 <body bgcolor="#FFFFFF" text="#00005A" link="#0066FF" alink="#3399FF" vlink="#2222BB">
-<h1>pcre2_set_max_pattern_length man page</h1>
+<h1>pcre2_code_copy man page</h1>
 <p>
 Return to the <a href="index.html">PCRE2 index page</a>.
 </p>
@@ -19,15 +19,17 @@ SYNOPSIS
 <b>#include &#60;pcre2.h&#62;</b>
 </P>
 <P>
-<b>int pcre2_set_max_pattern_length(pcre2_compile_context *<i>ccontext</i>,</b>
-<b>  PCRE2_SIZE <i>value</i>);</b>
+<b>pcre2_code *pcre2_code_copy(const pcre2_code *<i>code</i>);</b>
 </P>
 <br><b>
 DESCRIPTION
 </b><br>
 <P>
-This function sets, in a compile context, the maximum length (in code units) of
-the pattern that can be compiled. The result is always zero.
+This function makes a copy of the memory used for a compiled pattern, excluding
+any memory used by the JIT compiler. Without a subsequent call to
+<b>pcre2_jit_compile()</b>, the copy can be used only for non-JIT matching. The
+yield of the function is NULL if <i>code</i> is NULL or if sufficient memory
+cannot be obtained.
 </P>
 <P>
 There is a complete description of the PCRE2 native API in the
