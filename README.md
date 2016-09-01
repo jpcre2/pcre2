@@ -6,7 +6,7 @@ Disclaimer
 1. Version that resembles the official version (10.22 etc ...) are just mere copy of the original source (from links mentioned below).
 2. Version that includes minor version string is a modified version of the original. For example, 10.21.01 or such are modifications of 10.21
 3. This repository should not be used as the original source for PCRE2, use the official channel instead.
-4. If you want to share link to this repository, make sure you clear the fact that it's not the official place to download the PCRE2 source.
+4. If you want to share link to this repository, make sure you clarify the fact that it's not the official place to download the PCRE2 source.
 5. This repository may or may not keep records of all official PCRE2 releases.
 
 PCRE2 (Perl-compatible regular expression library)
