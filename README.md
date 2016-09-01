@@ -8,7 +8,7 @@ Disclaimer
 3. This repository should not be used as the original source for PCRE2, use the official channel instead.
 4. If you want to share link to this repository, make sure you clear the fact that it's not the official place to download the PCRE2 source.
 5. This repository may or may not keep records of all official PCRE2 releases.
-
+<pre>
 README file for PCRE2 (Perl-compatible regular expression library)
 ------------------------------------------------------------------
 
@@ -857,3 +857,4 @@ Philip Hazel
 Email local part: ph10
 Email domain: cam.ac.uk
 Last updated: 01 April 2016
+</pre>
